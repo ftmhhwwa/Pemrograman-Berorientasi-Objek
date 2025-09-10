@@ -31,6 +31,9 @@ public class Main {
                 daftarMahasiswa[i].infoMahasiswa();
             }
 
+            // Cetak total mahasiswa menggunakan metode static
+            System.out.println("\nTotal Mahasiswa: " + Mahasiswa.getTotalMahasiswa());
+
             System.out.println("\n=== Daftar Ruangan ===");
             for (int i = 0; i < daftarRuang.length; i++) {
                 System.out.print((i + 1) + ". ");

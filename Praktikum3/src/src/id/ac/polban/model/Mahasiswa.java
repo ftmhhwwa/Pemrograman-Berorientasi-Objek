@@ -5,11 +5,15 @@ public class Mahasiswa {
     private String nim;
     private String jurusan;
 
+   // atribut static untuk menghitung total mahasiswa
+    private static int totalMahasiswa = 0;
+    
     // Constructor
     public Mahasiswa(String nama, String nim, String jurusan) {
         this.nama = nama;
         this.nim = nim;
         this.jurusan = jurusan;
+        totalMahasiswa++;
     }
 
     // Getter & Setter
@@ -25,6 +29,11 @@ public class Mahasiswa {
         return jurusan;
     }
 
+   // Tambahkan metode static untuk mendapatkan total mahasiswa
+    public static int getTotalMahasiswa() {
+        return totalMahasiswa;
+    }
+    
     public void infoMahasiswa() {
         System.out.println("Nama: " + nama + "  \nNIM: " + nim + "  \nJurusan: " + jurusan);
     }
